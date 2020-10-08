@@ -10,7 +10,7 @@ public class FindMaxProblemTest {
 	@Test
 	public void testFindMaxIntegerOne() {
 		Integer expectedValue = 9;
-		Integer actualValue = FindMaxProblem.findMaxInteger(9, 6, 8);
+		Integer actualValue = FindMaxProblem.findMax(9, 6, 8);
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
@@ -18,7 +18,7 @@ public class FindMaxProblemTest {
 	@Test
 	public void testFindMaxIntegerTwo() {
 		Integer expectedValue = 9;
-		Integer actualValue = FindMaxProblem.findMaxInteger(6, 9, 8);
+		Integer actualValue = FindMaxProblem.findMax(6, 9, 8);
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
@@ -26,7 +26,7 @@ public class FindMaxProblemTest {
 	@Test
 	public void testFindMaxIntegerThree() {
 		Integer expectedValue = 9;
-		Integer actualValue = FindMaxProblem.findMaxInteger(7, 6, 9);
+		Integer actualValue = FindMaxProblem.findMax(7, 6, 9);
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 

@@ -10,7 +10,7 @@ public class FindMaxProblemStringTest {
 	@Test
 	public void testFindMaxStringOne() {
 		String expectedValue = "Peach";
-		String actualValue = FindMaxProblem.findMaxString("Peach", "Apple", "Banana");
+		String actualValue = FindMaxProblem.findMax("Peach", "Apple", "Banana");
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
@@ -18,7 +18,7 @@ public class FindMaxProblemStringTest {
 	@Test
 	public void testFindMaxStringTwo() {
 		String expectedValue = "Peach";
-		String actualValue = FindMaxProblem.findMaxString("Apple", "Peach", "Banana");
+		String actualValue = FindMaxProblem.findMax("Apple", "Peach", "Banana");
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
@@ -26,7 +26,7 @@ public class FindMaxProblemStringTest {
 	@Test
 	public void testFindMaxStringThree() {
 		String expectedValue = "Peach";
-		String actualValue = FindMaxProblem.findMaxString("Apple", "Banana", "Peach");
+		String actualValue = FindMaxProblem.findMax("Apple", "Banana", "Peach");
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 }

@@ -10,7 +10,7 @@ public class FindMaxProblemFloatTest {
 	@Test
 	public void testFindMaxFloatOne() {
 		Double expectedValue = 9.9;
-		Double actualValue = FindMaxProblem.findMaxFloat(9.9, 9.6, 9.8);
+		Double actualValue = FindMaxProblem.findMax(9.9, 9.6, 9.8);
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
@@ -18,7 +18,7 @@ public class FindMaxProblemFloatTest {
 	@Test
 	public void testFindMaxFloatTwo() {
 		Double expectedValue = 9.9;
-		Double actualValue = FindMaxProblem.findMaxFloat(9.6, 9.9, 9.8);
+		Double actualValue = FindMaxProblem.findMax(9.6, 9.9, 9.8);
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
@@ -26,7 +26,7 @@ public class FindMaxProblemFloatTest {
 	@Test
 	public void testFindMaxFloatThree() {
 		Double expectedValue = 9.9;
-		Double actualValue = FindMaxProblem.findMaxFloat(9.7, 9.6, 9.9);
+		Double actualValue = FindMaxProblem.findMax(9.7, 9.6, 9.9);
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
