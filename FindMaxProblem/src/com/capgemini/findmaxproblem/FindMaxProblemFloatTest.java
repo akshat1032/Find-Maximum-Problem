@@ -22,4 +22,12 @@ public class FindMaxProblemFloatTest {
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
+	// Test Case 2.3 Maximum number at position 3
+	@Test
+	public void testFindMaxFloatThree() {
+		Double expectedValue = 9.9;
+		Double actualValue = FindMaxProblem.findMaxFloat(9.7, 9.6, 9.9);
+		Assert.assertEquals(expectedValue, actualValue);
+	}
+
 }
