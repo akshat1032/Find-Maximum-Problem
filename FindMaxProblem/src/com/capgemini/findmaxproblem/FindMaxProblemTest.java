@@ -22,4 +22,12 @@ public class FindMaxProblemTest {
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 
+	// Test Case 1.3 Maximum number at position 3
+	@Test
+	public void testFindMaxIntegerThree() {
+		Integer expectedValue = 9;
+		Integer actualValue = FindMaxProblem.findMaxInteger(7, 6, 9);
+		Assert.assertEquals(expectedValue, actualValue);
+	}
+
 }
