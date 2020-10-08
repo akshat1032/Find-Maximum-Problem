@@ -21,4 +21,12 @@ public class FindMaxProblemStringTest {
 		String actualValue = FindMaxProblem.findMaxString("Apple", "Peach", "Banana");
 		Assert.assertEquals(expectedValue, actualValue);
 	}
+
+	// Test Case 3.3 Maximum String at position 3
+	@Test
+	public void testFindMaxStringThree() {
+		String expectedValue = "Peach";
+		String actualValue = FindMaxProblem.findMaxString("Apple", "Banana", "Peach");
+		Assert.assertEquals(expectedValue, actualValue);
+	}
 }
