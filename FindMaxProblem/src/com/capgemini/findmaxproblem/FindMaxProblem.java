@@ -20,9 +20,15 @@ public class FindMaxProblem<E extends Comparable<E>> {
 		return values.get(values.size() - 1);
 	}
 
+	// Generic Method to print max
+	public static <E extends Comparable<E>> void printMax(E max) {
+		System.out.println("The maximum value from the given input is : " + max);
+	}
+
 	// Method to internally call static find max method
-	public E testMaximum() {
-		return findMax(this.listOfValues);
+	public void testMaximum() {
+		E max = findMax(this.listOfValues);
+		printMax(max);
 	}
 
 	public static void main(String[] args) {
@@ -53,15 +59,9 @@ public class FindMaxProblem<E extends Comparable<E>> {
 		String fifthString = INPUT_USER.nextLine();
 
 		// Calling find max function for different types
-		Integer maximumInt = new FindMaxProblem<Integer>(first, second, third, four).testMaximum();
-		Double maximumDouble = new FindMaxProblem<Double>(firstFloat, secondFloat, thirdFloat).testMaximum();
-		String maximumString = new FindMaxProblem<String>(firstString, secondString, thirdString, fourthString,
-				fifthString).testMaximum();
-
-		// Printing the maximum to console
-		System.out.println("The largest integer out of the input  is : " + maximumInt);
-		System.out.println("The largest floating number out of the input is : " + maximumDouble);
-		System.out.println("The largest String out of the input is : " + maximumString);
+		new FindMaxProblem<Integer>(first, second, third, four).testMaximum();
+		new FindMaxProblem<Double>(firstFloat, secondFloat, thirdFloat).testMaximum();
+		new FindMaxProblem<String>(firstString, secondString, thirdString, fourthString, fifthString).testMaximum();
 	}
 
 }
